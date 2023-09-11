@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>InforMate
+    </title>
+</head>
+<body>
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="./index.html">InforMate 🧉</a>
+            </div>
+            <ul class="menu">
+                <li><a href="#portada">Inicio</a></li>
+                <li><a href="#news">Noticias</a></li>
+                <li><a href="#about-us">Equipo</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+    
+
+    
+   <section id="portada">
+        <div class="portada-content">
+            <h1>Bienvenido a InforMate 🧉</h1>
+            <p>Informate tranquilo de todo, tomando un mate, leyendo las ultimas noticias del momento!</p>
+            <div class="buttons">
+                <a href="#about-us" class="btn">Nuestro equipo 💪</a>
+                <a href="#news" class="btn btn-primary">Noticias GOD 📰</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="favorite-news">
+        <div class="container">
+            <h2>Tus Noticias favoritas van a aparecer aca! ⭐</h2>
+            <div class="favorite-news-list">
+              
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us">
+        <div class="container">
+            <h2>Nuestro equipo de trabajo</h2>
+            <p>InforMate, es una pag diseñada y pensada por Leandro Molina, que le cuesta una banda pero le manda mecha y va para adelante de a poquito jeje</p>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="./assets/yo cofunder.jpg" alt="Team Member 1">
+                    <h3>Leandro Molina</h3>
+                    <p>Co-Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/Yo el otro.jpg" alt="Team Member 2">
+                    <h3>Leo Max</h3>
+                    <p>Designer</p>
+                </div>
+                <div class="team-member">
+                    <img src="./assets/yo developer.jpg" alt="Team Member 3">
+                    <h3>icyShenoobalance</h3>
+                    <p>Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article>
+        <section id="news">
+            <div class="container">
+                <h2>Ultimas Noticias! 🗞️</h2>
+                <div class="filter-container">
+                    <button onclick="filterNews('all')" class="all">Todas</button>
+                    <button onclick="filterNews('Negocios')">Negocios</button>
+                    <button onclick="filterNews('Tecnologia')">Tecnología</button>
+                    <button onclick="filterNews('Deportes')">Deportes</button>
+                    <button onclick="filterNews('Entretenimiento')">Entretenimiento</button>
+                </div>
+                
+                <div class="containerNews">
+                
+                </div>    
+            </div>
+        </section>        
+    </article>
+    
+    
+    
+
+    
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contactanos! 📞</h2>
+            <div class="contact-info">
+                <div class="contact-detail">
+                    <p>4201 Calle Programera</p>
+                </div>
+                <div class="contact-detail">
+                    <p>InforMate@gmail.com</p>
+                </div>
+                <div class="contact-detail">
+                    <i class="fas fa-phone"></i>
+                    <p>+4201234201</p>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" id="name" placeholder="Tu Nombre" required>
+                <div id="nameError" class="error-message"></div>
+                <input type="email" id="email" placeholder="Tu email" required>
+                <div id="emailError" class="error-message"></div>
+                <textarea id="message" placeholder="Tu mensaje" required></textarea>
+                <div id="messageError" class="error-message"></div>
+                <div id="successMessage" class="success-message"></div>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+    
+    
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>InforMate 🧉</h3>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#portada">Inicio</a></li>
+                        <li><a href="#favorite-news">Noticias Fav</a></li>
+                        <li><a href="#about-us">Equipo</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"> Facebook</i></a>
+                    <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+                    <a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
